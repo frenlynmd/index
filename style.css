@@ -3,7 +3,7 @@ body {
     height: 100%;
     margin:0;
     font-family:'lucida console', Calibri ;
-    background-image:url('/images/shrine.jpg');
+    background-image:url('./images/shrine.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -41,7 +41,7 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:url('/images/hello-world.gif');
+    background-image:url('./images/hello-world.gif');
     min-height: 100%;
     padding-block: 30vh;
 }
