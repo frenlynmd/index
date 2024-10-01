@@ -1,0 +1,143 @@
+body {
+    background-color:#111111;
+    height: 100%;
+    margin:0;
+    font-family:'lucida console', Calibri ;
+    background-image:url('/images/shrine.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    color:aliceblue;
+}
+h2 {
+    color:springgreen;
+    font-family: Calibri;
+    font-size:27px;
+}
+
+/*Navigation bar*/
+.navbar div {
+    display: flex;
+    background-color: #0e1c20;
+}
+.navbar a {
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    border: 2px solid;
+    padding:14px;
+    width:100%;
+}
+
+.navbar div :hover {
+    background-color: white;
+    color:grey;
+}
+  
+/*Header*/
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url('/images/hello-world.gif');
+    min-height: 100%;
+    padding-block: 30vh;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-family:monospace;
+    border-style: solid;
+    background-color: #182f36b1;
+    width: 300px;
+    margin-inline: auto;
+}    
+
+#pic {
+    display: block;
+    height: 210px;
+    border-radius: 50%;
+    margin: auto;
+    padding: 4px;
+}
+
+/*Main*/
+.content {
+    margin-inline:128px;
+}
+#head {
+    text-align: center;
+    background-color:#0e1c20;
+    margin:0px;
+    font-size:32px;
+    border:4px solid;
+    padding: 24px;
+}
+.content div {
+    background-color: #1b1c38dc;
+    padding:64px;
+    margin: 12px;
+}
+
+#sakuya {
+    display: flex;
+    float:right;
+    height: 480px;
+    margin-inline:auto;
+}
+
+#link a {
+    color:cornflowerblue;
+}
+#link span :hover {
+    color:white
+}
+
+#post {
+    text-align: center;
+    font-family: 'Arial';
+}
+.load {
+    height:31px;
+    width:88px;
+    border-radius: 0px;
+    margin-top:160px;
+    background-color:#111111;
+    color:aliceblue;
+}
+#post a :hover {
+    background-color: white;
+    color:grey;
+}
+
+/*Footer*/
+.footer {
+    margin:0px;
+    padding:96px;
+    background-color: #111111;
+    text-align: center;
+}
+#back {
+    height:31px;
+    width:88px;
+    border-radius: 0%;
+    background-color: azure;
+    margin: 16px;
+}
+.icon a {
+    margin-top:16px;
+    color:white;
+}
+
+/*smaller screen*/
+@media only screen and (max-width: 1080px) {
+    #logo {font-size: 32px; width: 240px;}
+    #pic {height: 180px;}
+    #sakuya {float:none; height: 360px}
+    .content {margin:12px;}
+    .content div {padding: 24px;}
+}
