@@ -1,14 +1,15 @@
 body {
-    background-color:#111111;
-    height: 100%;
-    margin:0;
-    font-family:'lucida console', Calibri ;
-    background-image:url('./images/shrine.jpg');
+    background-color:black;
+    color:white;
+    margin:0px;
+    height:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('images/shrine.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     background-size:cover;
-    color:aliceblue;
+    background-attachment:fixed;
+    background-position: center;
+
 }
 h2 {
     color:springgreen;
@@ -16,40 +17,41 @@ h2 {
     font-size:27px;
 }
 
-/*Navigation bar*/
+/*Navigation Bar*/
 .navbar div {
-    display: flex;
-    background-color: #0e1c20;
+    display:flex;
+    background-color: black;
 }
 .navbar a {
+    font-family:monospace;
+    font-size: 18px;
     text-align: center;
     text-decoration: none;
+    border:2px solid;
+    width: 100%;
+    padding: 14px;
     color:white;
-    border: 2px solid;
-    padding:14px;
-    width:100%;
 }
-
-.navbar div :hover {
+.navbar a:hover {
     background-color: white;
     color:grey;
 }
-  
+
 /*Header*/
 .bgimg-1 {
+    background-image: url('/images/hello-world.gif');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:url('./images/hello-world.gif');
     min-height: 100%;
-    padding-block: 30vh;
+    padding-block:30vh;
 }
 #logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 44px;
+    font-size: 48px;
     font-family:monospace;
     border-style: solid;
     background-color: #182f36b1;
@@ -59,10 +61,10 @@ h2 {
 
 #pic {
     display: block;
-    height: 210px;
+    height: 200px;
     border-radius: 50%;
     margin: auto;
-    padding: 4px;
+    padding: 8px;
 }
 
 /*Main*/
@@ -78,12 +80,14 @@ h2 {
     padding: 24px;
 }
 .content div {
-    background-color: #1b1c38dc;
+    background-color: #24256389;
     padding:64px;
     margin: 12px;
+    backdrop-filter:blur(6px);
+    border-radius:12px;
 }
 
-#sakuya {
+#Reimu {
     display: flex;
     float:right;
     height: 480px;
@@ -94,7 +98,7 @@ h2 {
     color:cornflowerblue;
 }
 #link span :hover {
-    color:white
+    color:white;
 }
 
 #post {
@@ -117,7 +121,7 @@ h2 {
 /*Footer*/
 .footer {
     margin:0px;
-    padding:96px;
+    padding:64px;
     background-color: #111111;
     text-align: center;
 }
@@ -125,7 +129,7 @@ h2 {
     height:31px;
     width:88px;
     border-radius: 0%;
-    background-color: azure;
+    background-color: white;
     margin: 16px;
 }
 .icon a {
@@ -134,10 +138,17 @@ h2 {
 }
 
 /*smaller screen*/
-@media only screen and (max-width: 1080px) {
-    #logo {font-size: 32px; width: 240px;}
-    #pic {height: 180px;}
-    #sakuya {float:none; height: 360px}
-    .content {margin:12px;}
+@media only screen and (max-width: 1024px) {
+    .navbar a { border:1px solid}
+    #logo {font-size: 32px; width: 210px;}
+    #pic {height: 150px;}
+    #Reimu {float:none; height: 360px}
+    .content {margin:8px;}
     .content div {padding: 24px;}
+}
+
+@media only screen and (max-device-width: 768px) {
+    .bgimg-1, body{ background-attachment: scroll;}
+    .content {margin:4px;}
+    .content div {padding:12px;}
 }
