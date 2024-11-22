@@ -1,5 +1,5 @@
 body {
-    background-image: url('/./images/465733_white-grid-pattern-abstract-1920x1200-hd-wallpapers-and-free_1920x1200_h-1478895366.png');
+    background-image: url('nova.github.io/./images/465733_white-grid-pattern-abstract-1920x1200-hd-wallpapers-and-free_1920x1200_h-1478895366.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -11,11 +11,11 @@ body {
 }
 .container {
     margin:auto;
-    background-image: url('nova.github.io/images/Background-Effect-HTML-CSS-4049511124.gif');
+    background-image: url('nova.github.io/./images/Background-Effect-HTML-CSS-4049511124.gif');
     padding:16px;
 }
 .bgimg {
-    background-image: url('nova.github.io/images/gta-6-gaming-background_bmZtbmmUmZqaraWkpJRoamVnrWZqbWc-51563394.jpg');
+    background-image: url('nova.github.io/./images/gta-6-gaming-background_bmZtbmmUmZqaraWkpJRoamVnrWZqbWc-51563394.jpg');
     width:auto;
     background-attachment:fixed;
     background-repeat:no-repeat;
@@ -77,7 +77,7 @@ body {
 /*Extra content*/
 .more {
     display: flex;
-    background-image: url('nova.github.io/images/Background-Effect-HTML-CSS-4049511124.gif');
+    background-image: url('nova.github.io/./images/Background-Effect-HTML-CSS-4049511124.gif');
     margin-block:8px;
     padding:12px;
 }
