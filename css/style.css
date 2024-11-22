@@ -1,0 +1,145 @@
+body {
+    background-image: url('/images/465733_white-grid-pattern-abstract-1920x1200-hd-wallpapers-and-free_1920x1200_h-1478895366.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    margin-inline:20%;
+    margin-block:10vh;
+    font-family: monospace;
+    font-size:1.2em;
+    color:white;
+}
+.container {
+    margin:auto;
+    background-image: url('/images/Background-Effect-HTML-CSS-4049511124.gif');
+    padding:16px;
+}
+.bgimg {
+    background-image: url('/images/gta-6-gaming-background_bmZtbmmUmZqaraWkpJRoamVnrWZqbWc-51563394.jpg');
+    width:auto;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:xx-large;
+}
+/*Header logo*/
+.bgimg h1 {
+    background: linear-gradient(to right, orange, purple );
+    background-clip:text;
+    color:transparent;
+}
+
+/*navigation bar*/
+.navbar div {
+    display:flex;
+    background: black;
+}
+.navbar a {
+    color:white;
+    text-decoration:none;
+    border:2px solid;
+    padding: 14px;
+    text-align: center;
+    width:100%;
+}
+.navbar a:hover {
+    background-color:white;
+    color:grey;
+}
+#active {
+    background-color:white;
+    color:grey;
+}
+
+/*content*/
+#pic {
+    display:block;
+    height:150px;
+    margin:auto;
+    padding-top:5%;
+}
+#logo {
+    margin:auto;
+    margin-block:16px;
+    text-align:center;
+    padding:8px;
+}
+#png {
+    height:400px;
+    float:right;
+    padding:5%;
+}
+
+/*Extra content*/
+.more {
+    display: flex;
+    background-image: url('/images/Background-Effect-HTML-CSS-4049511124.gif');
+    margin-block:8px;
+    padding:12px;
+}
+.blog, .changelog {
+    height:200px;
+    width: 50%;
+    border:2px solid;
+    padding:6px;
+    margin:6px;
+    overflow: scroll;
+    float:left;
+}
+
+/*About*/
+.section {
+    border:5px solid;
+    border-image-slice:1;
+    border-image-source: linear-gradient(to right, orange, purple);
+    padding:10px;
+}
+.section p {
+    border:5px solid;
+    border-image-slice:1;
+    border-image-source: linear-gradient(to right, orange, purple);
+    padding:10px;
+}
+
+/*Social*/
+#social {
+    display: flex;
+}
+.link, .contact, .site {
+    height:300px;
+    width: 33%;
+    border:3px solid;
+    border-image-slice:1;
+    border-image-source: linear-gradient(to right, cyan, lime);
+    padding:12px;
+    margin:6px;
+    float:left;
+}
+.link a, .site a{
+    color:aqua;
+}
+.link a:hover, .site a:hover{
+    color:deepskyblue;
+}
+
+/*smaller screen*/
+@media only screen and (max-width: 1200px) {
+    body {margin-inline:10%; margin-block:5vh;}
+    .navbar a {padding:10px; border:1px solid; font-size: small;}
+    #png {height: 240px; float:none; display:block; margin:auto;}
+    .more {display: block;padding:12px}
+    .blog, .changelog {width: 95%;float:none; margin:auto; margin-block: 8px;}
+    #social {display: block;}
+    .link, .contact, .site {width:90%; float:none; margin:auto;}
+}
+
+/*mobile device*/
+@media only screen and (max-device-width: 768px) {
+    body {margin-inline:16px; margin-block:0px;background-attachment:scroll;}
+    .bgimg {background-attachment: scroll;}
+    .navbar {border:none}
+}
