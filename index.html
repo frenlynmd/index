@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!--webneko-->
     <script>NekoType="white"</script>
-<h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-href="https://webneko.net">Neko</a></h1>
-    <div class="bgimg"><h1 class="section">NOUVELIX.XYZ</h1></div>
+<h1 id=nl>
+    <script src="https://webneko.net/n20171213.js"></script>
+    <a href="https://webneko.net">Neko</a>
+</h1>
+
+    <!--header-->    
+    <header class="bgimg">
+        <h1 class="section">NOUVELIX.XYZ</h1>
+    </header>
+
     <!--navigation bar-->
     <nav class="navbar">
         <div>
@@ -22,34 +30,49 @@ href="https://webneko.net">Neko</a></h1>
             <a href="src/more.html">[More]</a>
         </div>
     </nav>
+
     <!--container-->
-    <header class="container">
+    <main class="container">
         <div>
             <img src="./images/angeldevil.png" id="pic" alt="Angel Devil png" title="Angel Devil">
             <h1 id="logo">WELCOME TO NOUVELIX SITE</h1>
-            <p style="text-align: center;">A personal website made by chronically online person, you can call me Nova or Felix. I make this website for starting my journey to learn programming. Feel free to explore my personal website. You can read more about me <a href="./src/about.html" style="color:aqua">here</a>!</p>
+            <p style="text-align: center;" id="link">A personal website made by chronically online person, you can call me Nova or Felix. I make this website for starting my journey to learn programming.
+                 Feel free to explore my personal website, maybe you can give me suggestion or feedback for my webpages. You can read more about me <a href="/src/about.html">here</a>!</p>
+            <img src="./images/shinmyoumaru-sukuna-shinmyoumaru.gif" style="height:100px; display: block; margin: auto; padding:30px">
         </div>
-    </header>
-    <main class="container">
-        <img src="./images/shinmyoumaru-sukuna-shinmyoumaru.gif" style="height:100px; display: block; margin: auto; padding:30px">
     </main>
+
+    <!--main-container-->
     <main class="more">
+        <!--Blog container-->
         <article class="blog">
             <h2>Blog:</h2>
-            <p>no new blog</p>
+            <ol id="link">
+                <li><h3><a href="./blog/firstblog.html">Hello World</a></h3></li>
+            </ol>
         </article>
+        <!--update container-->
         <div class="changelog">
             <h2>Changelog:</h2>
             <ul>
                 <li>1.1 - 22.11.24</li>
                 <dd>A complete redesign from the previous one, still not optimize for mobile tho. Added blog and changelog. Some pages are not finish yet.</dd>
+                <br>
+                <li>1.1.1 - 23.11.24</li>
+                <dd id="link">Fixing css and image not showing up causing by file pathing error. Adding <a href="http://webneko.net">webneko.net</a> to my website</dd>
+                <br>
+                <li>1.1.2 - 26.11.24</li>
+                <dd>Changing the wallpaper background and deleting old unused repository files.</dd>
             </ul>
         </div>
     </main>
+
+    <!--footer-->
     <footer class="container">
-        <p>last updated 22/11/2024</p><br>
         <h3>Button!!</h3>
-        <button>no button :(</button>
+        <a><button>no button :(</button></a>
+        <br>
+        <p>last updated 26/11/2024</p>
     </footer>
 </body>
 </html>

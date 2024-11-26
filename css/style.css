@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/465733_white-grid-pattern-abstract-1920x1200-hd-wallpapers-and-free_1920x1200_h-1478895366.png');
+    background-image: url('../images/purple-wallpaper.jpg');
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -15,12 +15,12 @@ body {
     padding:16px;
 }
 .bgimg {
-    background-image: url('../images/gta-6-gaming-background_bmZtbmmUmZqaraWkpJRoamVnrWZqbWc-51563394.jpg');
+    background-image: url('../images/photo-1614851099507-f1a93001d984.avif');
     width:auto;
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
-    height:30vh;
+    height:240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,11 +67,17 @@ body {
     margin-block:16px;
     text-align:center;
     padding:8px;
+    color:deeppink;
 }
 #png {
     height:400px;
     float:right;
     padding:5%;
+}
+#shinmyoumaru {
+    height:60px; 
+    display: block; 
+    margin: auto;
 }
 
 /*Extra content*/
@@ -95,13 +101,14 @@ body {
 .section {
     border:5px solid;
     border-image-slice:1;
-    border-image-source: linear-gradient(to right, orange, purple);
+    border-image-source:linear-gradient(to right, orange, purple);
+
     padding:10px;
 }
 .section p {
-    border:5px solid;
+    border:3px solid;
     border-image-slice:1;
-    border-image-source: linear-gradient(to right, orange, purple);
+    border-image-source:linear-gradient(to right, orange, purple);
     padding:10px;
 }
 
@@ -109,20 +116,19 @@ body {
 #social {
     display: flex;
 }
-.link, .contact, .site {
+.link, .contact {
     height:300px;
     width: 33%;
     border:3px solid;
     border-image-slice:1;
-    border-image-source: linear-gradient(to right, cyan, lime);
     padding:12px;
     margin:6px;
     float:left;
 }
-.link a, .site a{
+#link a {
     color:aqua;
 }
-.link a:hover, .site a:hover{
+#link a:hover {
     color:deepskyblue;
 }
 
@@ -134,7 +140,7 @@ body {
     .more {display: block;padding:12px}
     .blog, .changelog {width: 95%;float:none; margin:auto; margin-block: 8px;}
     #social {display: block;}
-    .link, .contact, .site {width:90%; float:none; margin:auto;}
+    .link, .contact {width:90%; float:none; margin:auto; height: 50%; margin-block: 10px;}
 }
 
 /*mobile device*/
