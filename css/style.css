@@ -3,42 +3,47 @@ body {
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
+
     margin-inline:20%;
     margin-block:10vh;
+    
     font-family: monospace;
     font-size:1.2em;
     color:white;
 }
+
 .container {
     margin:auto;
-    background-image: url('../images/Background-Effect-HTML-CSS-4049511124.gif');
     padding:16px;
+    background-image: url('../images/Background-Effect-HTML-CSS-4049511124.gif');
 }
-.bgimg {
-    background-image: url('../images/photo-1614851099507-f1a93001d984.avif');
-    width:auto;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
+
+/*header*/
+
+header {
     height:240px;
+    font-size: 1.6em;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:xx-large;
+    background:linear-gradient(to left, rgba(117, 14, 60, 0.8), rgba(39, 0, 106, 0.8));
+    backdrop-filter:blur(4px);
 }
-/*Header logo*/
-.bgimg h1 {
+
+header h1 {
     background: linear-gradient(to right, orange, purple );
     background-clip:text;
     color:transparent;
 }
 
 /*navigation bar*/
-.navbar div {
+
+nav div {
     display:flex;
     background: black;
 }
-.navbar a {
+
+nav a {
     color:white;
     text-decoration:none;
     border:2px solid;
@@ -46,22 +51,21 @@ body {
     text-align: center;
     width:100%;
 }
-.navbar a:hover {
-    background-color:white;
-    color:grey;
-}
-#active {
+
+nav a:hover, #active {
     background-color:white;
     color:grey;
 }
 
 /*content*/
+
 #pic {
     display:block;
     height:150px;
     margin:auto;
     padding-top:5%;
 }
+
 #logo {
     margin:auto;
     margin-block:16px;
@@ -69,11 +73,13 @@ body {
     padding:8px;
     color:deeppink;
 }
+
 #png {
     height:400px;
     float:right;
     padding:5%;
 }
+
 #shinmyoumaru {
     height:60px; 
     display: block; 
@@ -81,30 +87,32 @@ body {
 }
 
 /*Extra content*/
-.more {
+
+.box {
     display: flex;
     background-image: url('../images/Background-Effect-HTML-CSS-4049511124.gif');
     margin-block:8px;
     padding:12px;
 }
-.blog, .changelog {
+
+.box div {
     height:200px;
-    width: 50%;
+    width: 100%;
     border:2px solid;
-    padding:6px;
-    margin:6px;
+    padding:16px;
+    margin:4px;
     overflow: scroll;
-    float:left;
 }
 
 /*About*/
+
 .section {
     border:5px solid;
     border-image-slice:1;
     border-image-source:linear-gradient(to right, orange, purple);
-
     padding:10px;
 }
+
 .section p {
     border:3px solid;
     border-image-slice:1;
@@ -113,39 +121,66 @@ body {
 }
 
 /*Social*/
+
 #social {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.link, .contact {
-    height:300px;
-    width: 33%;
+
+.link {
+    height:200px;
+    width: auto;
     border:3px solid;
     border-image-slice:1;
     padding:12px;
     margin:6px;
     float:left;
 }
-#link a {
+
+a {
     color:aqua;
 }
-#link a:hover {
+
+a:hover {
     color:deepskyblue;
 }
 
+/*icon*/
+
+.social-ico {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-ico i {
+    color:grey;
+    padding-top:32px;
+    padding-inline:6px;
+    font-size:32px;
+}
+
+.social-ico i:hover {
+    color:white;
+}
+
 /*smaller screen*/
+
 @media only screen and (max-width: 1200px) {
-    body {margin-inline:10%; margin-block:5vh;}
-    .navbar a {padding:10px; border:1px solid; font-size: small;}
-    #png {height: 240px; float:none; display:block; margin:auto;}
-    .more {display: block;padding:12px}
-    .blog, .changelog {width: 95%;float:none; margin:auto; margin-block: 8px;}
+    body {margin-inline: auto; margin-block: 5vh;}
+    .navbar a {padding: 10px; border: 1px solid; font-size: small;}
+    #png {height: 240px; float: none; display: block; margin: auto;}
+    .box {display: block; padding: 12px; margin-block: 16px;}
+    .box div {width: auto; float: none; margin: auto; margin-block: 8px;}
     #social {display: block;}
-    .link, .contact {width:90%; float:none; margin:auto; height: 50%; margin-block: 10px;}
+    .link {width: auto; float: none; margin: auto; height: auto; margin-block: 10px; text-align: center;}
 }
 
 /*mobile device*/
 @media only screen and (max-device-width: 768px) {
-    body {margin-inline:16px; margin-block:0px;background-attachment:scroll;}
+    body {margin-block: 5vh; background-attachment: scroll; font-size: 1em;}
     .bgimg {background-attachment: scroll;}
-    .navbar {border:none}
+    header h1 {font-size: 1.4em;}
+    .navbar {border: none}
 }
