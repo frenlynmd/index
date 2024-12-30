@@ -169,7 +169,7 @@ a:hover {
 
 @media only screen and (max-width: 1200px) {
     body {margin-inline: auto; margin-block: 5vh;}
-    .navbar a {padding: 10px; border: 1px solid; font-size: small;}
+    nav a {padding: 10px; border: 1px solid; font-size: small;}
     #png {height: 240px; float: none; display: block; margin: auto;}
     .box {display: block; padding: 12px; margin-block: 16px;}
     .box div {width: auto; float: none; margin: auto; margin-block: 8px;}
@@ -182,5 +182,5 @@ a:hover {
     body {margin-block: 5vh; background-attachment: scroll; font-size: 1em;}
     .bgimg {background-attachment: scroll;}
     header h1 {font-size: 1.4em;}
-    .navbar {border: none}
+    nav {border: none}
 }
